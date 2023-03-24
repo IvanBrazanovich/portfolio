@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import logo from "../assets/images/bg_white.png";
 import "../styles.css";
 
 function Navbar() {
@@ -19,14 +20,15 @@ function Navbar() {
     } else {
       document.querySelector(".navbarcon").style.backgroundColor =
         "rgba(0, 0, 0, 0)";
-      document.querySelector(".tl").style.backgroundColor = "rgba(0, 0, 0, 0)";
     }
   }
 
   return (
     <>
       <div className="navbarcon flex justify-between items-center px-20 py-6 bg-transparent z-40 text-white lg:px-6 fixed w-full">
-        <h1 className="text-4xl  font-bold ">Reayhs</h1>
+        <h1 className="text-4xl  font-bold ">
+          <img src={logo} alt="" className="w-32" />
+        </h1>
 
         <nav
           className={` flex justify-center items-center gap-x-10 ${
@@ -41,29 +43,23 @@ function Navbar() {
               <AnchorLink href="#skills">Skills</AnchorLink>
             </li>
             <li className="bla">
+              <AnchorLink href="#about">About</AnchorLink>
+            </li>
+            <li className="bla">
               <AnchorLink href="#projects">Projects</AnchorLink>
             </li>
           </ul>
 
           <div className="icon text-lg flex gap-4  lg:gap-8 lg:my-10">
-            <a href="https://twitter.com/reayhs" target="_blank">
-              <i className="fa-brands fa-twitter border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
-            </a>
-
-            <a href="https://www.instagram.com/iburakz/" target="_blank">
-              <i className="fa-brands fa-instagram border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
-            </a>
             <a
-              href="https://github.com/Reayhs/react-tailwind-portfolio"
+              href="https://www.linkedin.com/in/ivanbrazanovich/"
               target="_blank"
             >
+              <i className="fa-brands fa-linkedin border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
+            </a>
+            <a href="https://github.com/IvanBrazanovich" target="_blank">
               <i className="fa-brands fa-github border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
-          </div>
-          <div className="btn">
-            <button className="border-[1px] border-white border-solid py-2 px-4 hover:bg-white hover:text-black font-bold">
-              Let's Connect
-            </button>
           </div>
         </nav>
         <i
