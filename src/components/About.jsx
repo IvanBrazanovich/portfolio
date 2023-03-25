@@ -1,7 +1,7 @@
 import React from "react";
 import me_pic from "../assets/images/me_pic.jpeg";
 import background from "../assets/images/banner-bg.png";
-import pdfResume from "../assets/pdf/BrazanovichIvan.pdf";
+import pdfResume from "../assets/pdf/Brazanovich_Ivan.pdf";
 
 const About = () => {
   // Function will execute on click of button
