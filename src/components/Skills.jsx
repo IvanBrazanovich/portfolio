@@ -3,9 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../styles.css";
-import { Navigation } from "swiper";
-import { Pagination } from "swiper";
-import img from "../assets/images/meter1.svg";
+import { Navigation, Pagination, Autoplay } from "swiper";
 import bg from "../assets/images/banner-bg.png";
 
 const skillsArray = [
@@ -107,8 +105,9 @@ function Skills() {
               pagination={{
                 clickable: true,
               }}
+              autoplay
               navigation={true}
-              modules={[Navigation, Pagination]}
+              modules={[Navigation, Pagination, Autoplay]}
               className="mySwiper "
             >
               {skillsArray.map((skill, index) => {

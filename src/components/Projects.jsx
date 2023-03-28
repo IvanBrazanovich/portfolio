@@ -46,16 +46,35 @@ function Projects() {
   return (
     <>
       <div id="projects" className="projects  bg-[#171717] text-white py-10">
-        <h1 className="text-center text-4xl font-bold py-6">
-          My Favorite Projects
-        </h1>
-        <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-[#939191]">
-          In this section, I have chosen to showcase some of my favorite
-          projects. These stood out to me for various reasons, whether it be
-          their creativity, technical complexity, or the enjoyment I had
-          creating them.
-        </p>
-        <div className="flex justify-center items-center gap-4 mt-12 mb-2 ">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold py-6">My Favorite Projects</h1>
+          <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-[#939191]">
+            In this section, I have chosen to showcase some of my favorite
+            projects. These stood out to me for various reasons, whether it be
+            their creativity, technical complexity, or the enjoyment I had
+            creating them.
+          </p>
+          <h2 className="mt-6 bg-white text-black p-3 font-bold inline-block rounded-md">
+            Hover or click any project to see more
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 inline mx-1"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"
+                />
+              </svg>
+            </span>
+          </h2>
+        </div>
+        <div className="flex justify-center items-center gap-4 mt-1 mb-2 ">
           <div className="grid grid-cols-3 px-10 py-5 justify-center items-center gap-8 lg:grid-cols-2 tl:grid-cols-1  ">
             {projects.map((item, i) => (
               <ProjectCard key={i} item={item} />

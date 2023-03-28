@@ -44,7 +44,7 @@ const About = () => {
             className=" w-1/3 tl:w-full rounded-lg object-cover "
           />
 
-          <div className=" tl:w-full w-1/2 text-white flex gap-5  flex-col ">
+          <div className=" tl:w-full w-1/2 text-white flex gap-5  flex-col font-medium ">
             Hey! my name is Brazanovich Ivan and I am a web developer. I
             discovered my love for programming when I was just 15 years old and
             ever since then, I have been honing my skills and knowledge in this
