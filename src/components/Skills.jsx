@@ -100,15 +100,21 @@ function Skills() {
           <h1 className="text-4xl ">Skills</h1>
           <div className="box flex  justify-between  items-center bg-[#171717] ">
             <Swiper
-              slidesPerView={iconAmount}
               spaceBetween={0}
-              pagination={{
-                clickable: true,
+              loop={true}
+              centeredSlides={true}
+              speed={2000}
+              autoplay={{
+                delay: 0,
+                disableOnInteraction: false,
               }}
-              autoplay
-              navigation={true}
-              modules={[Navigation, Pagination, Autoplay]}
+              slidesPerView={iconAmount || 3}
+              effect="flip"
+              modules={[Autoplay]}
               className="mySwiper "
+              onSwiper={(swiper) => {
+                swiper.$wrapperEl[0].style.transitionTimingFunction = "linear";
+              }}
             >
               {skillsArray.map((skill, index) => {
                 return (

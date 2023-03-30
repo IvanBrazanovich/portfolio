@@ -37,19 +37,21 @@ const About = () => {
         backgroundImage: `url(${background})`,
       }}
     >
-      <div className="w-full h-full  tl:p-5 p-10 bg-gray-900/50  ">
+      <div className="w-full h-full  tl:p-5 p-10 bg-gray-900/60  ">
         <div className=" tl:flex-col flex justify-center lg:w-full lg2:w-3/4 tl:content-center  tl:flex-wrap w-2/3  m-auto gap-6 ">
           <img
             src={me_pic}
             className=" w-1/3 tl:w-full rounded-lg object-cover "
           />
 
-          <div className=" tl:w-full w-1/2 text-white flex gap-5  flex-col font-medium ">
-            Hey! my name is Brazanovich Ivan and I am a web developer. I
-            discovered my love for programming when I was just 15 years old and
-            ever since then, I have been honing my skills and knowledge in this
-            field. Over the years, I have specialized in fullstack development,
-            with a particular focus on React js.
+          <div className=" tl:w-full w-1/2 text-white flex gap-5  flex-col font-medium bg-gray-900/50 ">
+            <p>
+              Hey! my name is Brazanovich Ivan and I am a web developer. I
+              discovered my love for programming when I was just 15 years old
+              and ever since then, I have been honing my skills and knowledge in
+              this field. Over the years, I have specialized in fullstack
+              development, with a particular focus on React js.
+            </p>
             <p>
               What I enjoy the most about programming is the logic behind it. I
               am constantly amazed by how a few lines of code can create such
